@@ -7,53 +7,10 @@
   - And exposing them with `attr_reader`, `attr_writer`, `attr_accessor`
 - Be able to inherit from superclasses and define subclasses
 
-### Preparation
-*Before this lesson, students should:*
-- Be comfortable with the very basics of ruby
-- Understand the basic concepts of OOP and inheritance (JS class lecture)
 
 
-## OOP
-
-Ruby is an **object-orientated** language.  Everything in Ruby is an object.  In other words everything is an instance of the [`Object` class](https://ruby-doc.org/core-2.4.1/Object.html).
-
-```ruby
-2.is_a?(Object) # => true
-nil.is_a?(Object) # => true
-true.is_a?(Object) # => true
-''.is_a?(Object) # => true
-:foo.is_a?(Object) # => true
-[].is_a?(Object) # => true
-{}.is_a?(Object) # => true
-```
-
-## Methods
-
-Everything is an object and every object has methods.
-
-```ruby
-'some str'.methods
-# => [..., :include?, :upcase, :downcase, :reverse, ...]
-```
-
-In Javascript everything is a property, where some properties happen to be functions.
-
-In Ruby everything is a method.  When you call `thing.foo` you are calling a method called `foo` on `thing`.
-
-
-## Classes
-
-Every object is an instance of some [`Class`](https://ruby-doc.org/core-2.2.0/Class.html)
-
-The `Array` class, for example, has methods `length`, `map`, `each`, etc.  This means we can call these methods on any instance of `Array`
-
-```ruby
-arr = ['Stacey', 'Lacey', 'Tracey']
-arr.length # => 3
-arr.map { |name| name.upcase }
-```
-
-> Check out all the `Array` methods by calling `Array.instance_methods` or `[].methods` (or looking at the docs).  Also check out `Enumerable.instance_methods`
+## Before we define a class, let's take a look at how we defined a class in JS
+example
 
 ## Defining a Class
 
