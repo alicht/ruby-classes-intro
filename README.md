@@ -57,6 +57,7 @@ A few things here:
 sima.name
 # => NoMethodError: undefined method `name' for Person
 ```
+
 ## How can we resolve this?
 
 ### `attr_reader`
