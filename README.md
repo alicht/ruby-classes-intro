@@ -39,10 +39,12 @@ A few things here:
   * Instance variables can be referenced from any method inside of the class
   * Instance variables can **only** be referenced from methods inside of the class
 
+## We run into an error if we try to do...
 ```ruby
 stacey.name
 # => NoMethodError: undefined method `name' for Person
 ```
+## How can we resolve this?
 
 ### `attr_reader`
 
