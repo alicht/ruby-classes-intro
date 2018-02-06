@@ -39,8 +39,8 @@ class Person
   end
 end
 
-stacey = Person.new('Stacey', 25)
-lacey = Person.new('Lacey', 26)
+katie = Person.new('Katie', 30)
+sima = Person.new('Sima', 27)
 ```
 
 A few things here:
@@ -54,7 +54,7 @@ A few things here:
 
 ## We run into an error if we try to do...
 ```ruby
-stacey.name
+sima.name
 # => NoMethodError: undefined method `name' for Person
 ```
 ## How can we resolve this?
@@ -74,7 +74,7 @@ end
 
 # ...
 
-stacey.name # => "Stacey"
+sima.name # => "Sima"
 ```
 
 This also means we can just use `name` in our `say_hi` method
@@ -100,7 +100,7 @@ class Person
 end
 ```
 
-Now we can call `stacey.age` (and also replace `@age` with `age` in `say_hi`).
+Now we can call `sima.age` (and also replace `@age` with `age` in `say_hi`).
 
 Because this pattern is so common there is a very nice method, `attr_reader`, which we can use as a short-hand.
 
