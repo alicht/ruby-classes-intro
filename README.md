@@ -25,7 +25,7 @@ class Pikachu {
 }
 ```
 
-## Defining a Class
+## Defining a Class in Ruby
 
 ```ruby
 class Person
