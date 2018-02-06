@@ -42,6 +42,9 @@ end
 katie = Person.new('Katie', 30)
 sima = Person.new('Sima', 27)
 ```
+## Exercise
+Knowing what we know now, let's try and build a Dog class. The Dog should have a breed, color, size as properties, and should have a `bark` method which he barks and then says his breed.
+-  Please instantiate 3 dogs, each with different names 
 
 A few things here:
 
