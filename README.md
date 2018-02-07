@@ -1,12 +1,12 @@
 # Ruby Classes & OOP
 
 ### Objectives
-- Define classes in Ruby
-- More exposure to instance variables
+- Compare JavaScript and Ruby classes
+- Define and create Ruby classes, and instantiate Ruby objects
 - Major Ruby "flaw" and how `attr_reader`, `attr_writer`, `attr_accessor`solve it
 - Understanding what `self` is
 - `private` methods
-- Be able to inherit from superclasses and define subclasses
+- Inheritance
 
 ## Yesterday...
 Ruby comes with a few types of Objects to get us started, things like Integer, String, Array, etc. We call these base types of Objects "Primitives." But what if we wanted to create a new type in our programming universe, a new kind of object for our code? That's what the class keyword and object orientation allows us to do.
