@@ -3,7 +3,7 @@
 ### Objectives
 - Define classes in Ruby
 - More exposure to instance variables
-- Major "flaw" in ruby and how `attr_reader`, `attr_writer`, `attr_accessor`solve it
+- Major Ruby "flaw" and how `attr_reader`, `attr_writer`, `attr_accessor`solve it
 - `private` methods
 - Be able to inherit from superclasses and define subclasses
 
