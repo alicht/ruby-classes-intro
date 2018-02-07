@@ -4,6 +4,7 @@
 - Define classes in Ruby
 - More exposure to instance variables
 - Major Ruby "flaw" and how `attr_reader`, `attr_writer`, `attr_accessor`solve it
+- Understanding what `self` is
 - `private` methods
 - Be able to inherit from superclasses and define subclasses
 
@@ -250,6 +251,8 @@ Go back to the 3 Dogs you created earlier and put your new `attr_reader`, `attr_
 - one dog should have his `color` changed
 
 BONUS: can you create a new array that has these changes inside of it?
+
+# Self
 
 
 ## `private` methods
