@@ -9,6 +9,8 @@
 ## Yesterday...
 Ruby comes with a few types of Objects to get us started, things like Integer, String, Array, etc. We call these base types of Objects "Primitives." But what if we wanted to create a new type in our programming universe, a new kind of object for our code? That's what the class keyword and object orientation allows us to do.
 
+Classes are the blueprints that define the behavior and information our objects will contain. They let us manufacture and instantiate new instances.
+
 
 ## Before we define a class, let's take a look at how we defined a class in JS
 ```js
