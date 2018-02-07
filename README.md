@@ -11,7 +11,7 @@
 
 ## Before we define a class, let's take a look at how we defined a class in JS
 ```js
-class Pikachu {
+class Pokemon {
   constructor(number, type, fastAttack, chargeAttack, hiddenPower){
     this.number = number;
     this.type = type;
