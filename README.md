@@ -228,11 +228,11 @@ So, avoid using ivars directly.  Use our friends `attr_reader`, `attr_writer`, a
 ## :running: Exercise! :running:
 
 Go back to the 3 Dogs you created earlier and put your new `attr_reader`, `attr_writer`, `attr_accessor` to work. 
-- one dog should have his `name` changed
-- one dog should have his `breed` changed
-- one dog should have his `color` changed
+-  one dog should have his `name` changed
+-  one dog should have his `breed` changed
+-  one dog should have his `color` changed
 
-- Please take your 3 dogs, put the**M** into an **A**rray, and **P**lease iterate over this array returning just the names of the dogs
+-  Please take your 3 dogs, put the**M** into an **A**rray, and **P**lease iterate over this array returning just the names of the dogs
 
 # Self
 
