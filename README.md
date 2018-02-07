@@ -4,6 +4,7 @@
 - Define classes in Ruby
 - More exposure to instance variables
 - Major "flaw" in ruby and how `attr_reader`, `attr_writer`, `attr_accessor`solve it
+- `private` methods
 - Be able to inherit from superclasses and define subclasses
 
 ## Yesterday...
@@ -43,7 +44,7 @@ class Person
 end
 
 katie = Person.new('Katie', 30)
-sima = Person.new('Sima', 27)
+irving = Person.new('Irving', 27)
 ```
 A few things here:
 * We always use the `new` method to create a new instance.
@@ -53,9 +54,9 @@ A few things here:
   * Instance variables can be referenced from any method inside of the class
   * Instance variables can **only** be referenced from methods inside of the class
 
-## Exercise
+## :running: Exercise :running:
 -  Knowing what we know now, let's build a Dog class. The Dog class should have a `breed`, `color`, `name` as properties, and should have a `bark` method which he barks and then says his breed.
-- Please instantiate 3 dogs, put them into an array, and iterate over this array returning just the names of the dogs
+- Please instantiate 3 dogs, put the**M** into an **A**rray, and **P**lease iterate over this array returning just the names of the dogs
 
 # But wait!
 
@@ -65,7 +66,7 @@ A few things here:
 
 ## We run into an error if we try to do...
 ```ruby
-sima.name
+irving.name
 # => NoMethodError: undefined method `name' for Person
 ```
 
@@ -73,7 +74,7 @@ sima.name
 
 
 
-If we want `name` to be accessible outside of the class we can simply create a method
+If we want `name` to be accessible outside of the class we can need to create a method
 
 ```ruby
 class Person
@@ -86,7 +87,7 @@ end
 
 # ...
 
-sima.name # => "Sima"
+irving.name # => "Irving"
 ```
 
 This also means we can just use `name` in our `say_hi` method
@@ -112,7 +113,7 @@ class Person
 end
 ```
 
-Now we can call `sima.age` (and also replace `@age` with `age` in `say_hi`).
+Now we can call `irving.age` (and also replace `@age` with `age` in `say_hi`).
 
 ### aka `attr_reader`
 
@@ -143,12 +144,14 @@ end
 
 Neat.
 
-### `attr_writer`
+## Ok great... but what about reassigning a new value to an existing property?
+
+![Alt Text](https://media.giphy.com/media/AvAVxpOeUcxgY/giphy.gif)
 
 Let's see if we can set the name
 
 ```ruby
-stacey.name = 'Stacey Mae'
+irving.name = 'Mark'
 # => NoMethodError: undefined method `name='
 ```
 
@@ -165,9 +168,11 @@ class Person
 Now we can do
 
 ```ruby
-stacey.name = 'Stacey Mae'
-stacey.name # => 'Stacey Mae'
+irving.name = 'Mark'
+mark.name # => 'Mark'
 ```
+
+### aka `attr_writer`
 
 Instead of having to define the method, we can just use `attr_writer`
 
@@ -204,7 +209,7 @@ We do _not_ need the `self.` when reading.  There is an implicit `self.` here.
 > Exception to that rule: if we want to reference the class from inside an instance method we need `self.class` because class is a reserved word. (We cannot just write `class`)
 
 
-### `attr_accessor`
+### So commonplace that one phrase takes care of both `attr_accessor`
 
 Now we have
 
@@ -235,6 +240,15 @@ Why don't we just use the ivars everywhere instead of readers and writers? (eg. 
 This is very error prone as instance variables always yield `nil` if they are not defined. You do NOT get an error.  This means if we mistype ivars anywhere we will get unexpected bugs that are hard to track down.
 
 So, avoid using ivars directly.  Use our friends `attr_reader`, `attr_writer`, and `attr_accessor`.
+
+## :running: Exercise! :running:
+
+Go back to the 3 Dogs you created earlier and put your new `attr_reader`, `attr_writer`, `attr_accessor` to work. 
+- one dog should have his `name` changed
+- one dog should have his `breed` changed
+- one dog should have his `color` changed
+
+BONUS: can you create a new array that has these changes inside of it?
 
 
 ## `private` methods
@@ -285,8 +299,8 @@ That's it! We don't even need to write an `initialize` if it does all the same s
 Let's confirm a few things:
 
 ```ruby
-person = Person.new('Stacey', 25)
-programmer = Programmer.new('Tracey', 26)
+person = Person.new('Elie', 29)
+programmer = Programmer.new('Aaron', 25)
 
 person.is_a?(Person) # => true
 person.is_a?(Programmer) # => false
@@ -422,7 +436,7 @@ programmer.about # => NoMethodError: undefined method `about' for Person
 
 ## Lab
 
-Another [shapes lab!](https://git.generalassemb.ly/wdi-nyc-hamilton/LAB_U04_D02_Ruby-Classes)
+
 
 ## Resources
 
