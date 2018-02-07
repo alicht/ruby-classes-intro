@@ -13,7 +13,7 @@ Ruby comes with a few types of Objects to get us started, things like Integer, S
 Classes are the blueprints that define the behavior and information our objects will contain. They let us manufacture and instantiate new instances.
 
 
-## Before we define a class, let's take a look at how we defined a class in JS
+## Before we define a class in Ruby, let's take a look at how we defined a class in JS
 ```js
 class Pokemon {
   constructor(number, type, fastAttack, chargeAttack, hiddenPower){
