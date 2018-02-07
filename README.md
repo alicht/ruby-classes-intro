@@ -1,4 +1,4 @@
-# Ruby OOP
+# Ruby Classes & OOP
 
 ### Objectives
 *After this lesson, students will be able to:*
