@@ -16,12 +16,11 @@ Classes are the blueprints that define the behavior and information our objects 
 ## Before we define a class in Ruby, let's take a look at how we defined a class in JS
 ```js
 class Pokemon {
-  constructor(number, type, fastAttack, chargeAttack, hiddenPower){
+  constructor(name, number, fastAttack, chargeAttack){
+    this.name = name;
     this.number = number;
-    this.type = type;
     this.fastAttack = fastAttack;
     this.chargeAttack = chargeAttack;
-    this.hiddenPower = hiddenPower;
   }
   walks(){
     return `I will follow you wherever you go, and I can also do ${this.hiddenPower}!`
