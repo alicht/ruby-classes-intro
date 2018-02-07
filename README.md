@@ -280,6 +280,8 @@ elie.greet("Avi") # "Hi Avi! My name is Avi."
   end
 end
 ```
+* [For more on the concept of Self in Ruby](http://ruby-for-beginners.rubymonstas.org/writing_classes/self.html)
+
 
 
 ## `private` methods
