@@ -24,7 +24,7 @@ class Pokemon {
     this.chargeAttack = chargeAttack;
   }
   walks(){
-    return `I will follow you wherever you go, and I can also do ${this.hiddenPower}!`
+    return `I will follow you wherever you go, and I can also do a ${this.fastAttack} attack!`
   }
 }
 
@@ -41,7 +41,7 @@ class Person
   end
 
   def say_hi
-    puts "Hi, name is #{@name} and I am #{@age} years old!"
+    puts "Hi, my name is #{@name} and I am #{@age} years old!"
   end
 end
 
@@ -58,7 +58,7 @@ A few things here:
 
 ## :running: Exercise :running:
 -  Knowing what we know now, let's build a Dog class. The Dog class should have a `breed`, `color`, `name` as properties, and should have a `bark` method which he barks and then says his breed.
-- Please instantiate 3 dogs, put the**M** into an **A**rray, and **P**lease iterate over this array returning just the names of the dogs
+- Please instantiate 3 dogs :dog: :poodle: :paw_prints:
 
 # But wait!
 
@@ -192,24 +192,6 @@ class Person
 # ...
 ```
 
-To use our writer within the class:
-
-```ruby
-class Person
-  # ...
-
-  def have_birthday
-    puts 'happy birthday'
-    self.age = age + 1
-  end
-```
-
-`self` is _similar_ to JS's `this`.  If we just did `age = age + 1` that would be setting a local variable.  We need to actually call our `age=` method to change the instance variable.
-
-We do _not_ need the `self.` when reading.  There is an implicit `self.` here.
-
-> Exception to that rule: if we want to reference the class from inside an instance method we need `self.class` because class is a reserved word. (We cannot just write `class`)
-
 
 ### So commonplace that one phrase takes care of both `attr_accessor`
 
@@ -250,7 +232,7 @@ Go back to the 3 Dogs you created earlier and put your new `attr_reader`, `attr_
 - one dog should have his `breed` changed
 - one dog should have his `color` changed
 
-BONUS: can you create a new array that has these changes inside of it?
+- Please take your 3 dogs, put the**M** into an **A**rray, and **P**lease iterate over this array returning just the names of the dogs
 
 # Self
 
@@ -280,6 +262,19 @@ elie.greet("Avi") # "Hi Avi! My name is Avi."
   end
 end
 ```
+
+## Another Example
+```ruby
+class Person
+  # ...
+
+  def have_birthday
+    puts 'happy birthday'
+    self.age = age + 1
+  end
+```
+
+
 * [For more on the concept of Self in Ruby](http://ruby-for-beginners.rubymonstas.org/writing_classes/self.html)
 
 
@@ -316,6 +311,10 @@ person.increment_age
 ```
 
 This error is a good thing!  Our `increment_age` method is just used for implementation.  We do not want it to be called outside of the class.
+
+## Another note about Self
+`self` is _similar_ to JS's `this`.  If we just did `age = age + 1` that would be setting a local variable.  We need to actually call our `age=` method to change the instance variable.
+
 
 
 
