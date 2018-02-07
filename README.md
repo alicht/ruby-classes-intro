@@ -27,6 +27,8 @@ class Pokemon {
     return `I will follow you wherever you go, and I can also do ${this.hiddenPower}!`
   }
 }
+
+pokemon = new Pokemon("Pikachu", 12, "thunder", "brick break" )
 ```
 
 ## Defining a Class in Ruby
