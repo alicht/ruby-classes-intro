@@ -1,12 +1,10 @@
 # Ruby Classes & OOP
 
 ### Objectives
-*After this lesson, students will be able to:*
 - Define classes in Ruby
-- Be comfortable with instance variables
-  - And exposing them with `attr_reader`, `attr_writer`, `attr_accessor`
+- More exposure to instance variables
+- Major "flaw" in ruby and how `attr_reader`, `attr_writer`, `attr_accessor`solve it
 - Be able to inherit from superclasses and define subclasses
-
 
 
 ## Before we define a class, let's take a look at how we defined a class in JS
