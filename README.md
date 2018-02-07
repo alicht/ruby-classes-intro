@@ -254,6 +254,33 @@ BONUS: can you create a new array that has these changes inside of it?
 
 # Self
 
+![waldo](https://user-images.githubusercontent.com/6153182/35915583-7650cf6c-0bd5-11e8-93e1-01de728c6ca6.jpg)
+
+```ruby
+class Person
+  attr_accessor :name
+  def initialize(name)
+    @name = name
+  end
+  
+  def greet(name)
+    puts "Hi #{name}! My name is #{name}."
+  end
+end
+
+
+elie = Person.new("Elie")
+elie.greet("Avi") # "Hi Avi! My name is Avi."
+```
+## Self to the rescue!
+
+```ruby
+  def greet(name)
+    puts "Hi #{name}! My name is #{self.name}."
+  end
+end
+```
+
 
 ## `private` methods
 
@@ -291,8 +318,6 @@ This error is a good thing!  Our `increment_age` method is just used for impleme
 
 
 ## Inheritance
-
-Cake!
 
 ```ruby
 class Programmer < Person
