@@ -42,18 +42,23 @@ end
 katie = Person.new('Katie', 30)
 sima = Person.new('Sima', 27)
 ```
-## Exercise
-Knowing what we know now, let's try and build a Dog class. The Dog should have a breed, color, size as properties, and should have a `bark` method which he barks and then says his breed.
--  Please instantiate 3 dogs, each with different names 
-
 A few things here:
-
 * We always use the `new` method to create a new instance.
 * `initialize` is what gets called when creating the new instance.
   * We **never** call `initialize` in our code. We just define it
 * We use the `@` sign to create _instance variables_ (aka _ivars_)
   * Instance variables can be referenced from any method inside of the class
   * Instance variables can **only** be referenced from methods inside of the class
+
+## Exercise
+-  Knowing what we know now, let's build a Dog class. The Dog class should have a `breed`, `color`, `name` as properties, and should have a `bark` method which he barks and then says his breed.
+- Please instantiate 3 dogs, put them into an array, and iterate over this array returning just the names of the dogs
+
+# But wait!
+
+![Alt Text](https://media.giphy.com/media/9fXNQ2qZEgn3a/giphy.gif)
+
+# Uh oh... looks like classes in Ruby has a massive flaw... :flushed:
 
 ## We run into an error if we try to do...
 ```ruby
@@ -63,7 +68,7 @@ sima.name
 
 ## How can we resolve this?
 
-### `attr_reader`
+
 
 If we want `name` to be accessible outside of the class we can simply create a method
 
@@ -105,6 +110,8 @@ end
 ```
 
 Now we can call `sima.age` (and also replace `@age` with `age` in `say_hi`).
+
+### aka `attr_reader`
 
 Because this pattern is so common there is a very nice method, `attr_reader`, which we can use as a short-hand.
 
