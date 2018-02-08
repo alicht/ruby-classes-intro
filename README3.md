@@ -20,5 +20,14 @@ Now think about a web form to buy an airline ticket. You probably need to enter 
 ## How can we view what our form submits?
 look through the output that gets printed into your console when you run your $ rails server
 
+![screen shot 2018-02-08 at 2 34 52 am](https://user-images.githubusercontent.com/6153182/35960708-bf608f8c-0c78-11e8-88b3-d28026a9a37b.png)
 
+-  The first line tells us which HTTP method was used and which route the form went to. 
+-  The second line tells us which controller and action the form will be handled by. 
+-  The third line contains everything that will get stuffed into the params hash for the controller to use. 
+
+## Forms in Rails
+First thing you'll realize is... that it wont work
+-  You’ll either get an error or your user session will get zeroed out
+A:  That’s because Rails by default automatically protects you from cross-site request forgery and it requires you to verify that the form was actually submitted from a page you generated. In order to do so, it generates an “authenticity token” which looks like gibberish but helps Rails match the form with your session and the application.
 
