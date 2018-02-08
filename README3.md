@@ -31,3 +31,7 @@ First thing you'll realize is... that it wont work
 -  You’ll either get an error or your user session will get zeroed out
 A:  That’s because Rails by default automatically protects you from cross-site request forgery and it requires you to verify that the form was actually submitted from a page you generated. In order to do so, it generates an “authenticity token” which looks like gibberish but helps Rails match the form with your session and the application.
 
+### Rails form helpers
+Rails tries to make your life as easy as it can, so naturally it provides you with helper methods that automate some of the repetitive parts of creating forms.
+
+
